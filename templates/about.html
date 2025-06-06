@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Tech Maps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HR5DP55R2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5HR5DP55R2');
+</script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-tabs">
+            <a href="{{ url_for('index') }}" class="nav-tab active">Chicago Tech Map</a>
+            <a href="{{ url_for('about') }}" class="nav-tab active">About</a>
+        </nav>
+        <h1>About Chicago Tech Maps</h1>
+     
+    <p>This is a map of the tech industry in Chicago. It is a work in progress and will be updated regularly.</p>
+    </div>
+</body>
+</html> 

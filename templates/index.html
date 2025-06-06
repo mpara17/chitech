@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HR5DP55R2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5HR5DP55R2');
+    </script>
     <title>Chicago Tech Maps</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
@@ -10,6 +18,7 @@
     <div class="container">
         <nav class="nav-tabs">
             <a href="{{ url_for('index') }}" class="nav-tab active">Chicago Tech Map</a>
+            <a href="{{ url_for('about') }}" class="nav-tab active">About</a>
         </nav>
         <h1>Chicago Tech Map</h1>
      
