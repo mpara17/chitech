@@ -10,5 +10,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/tcw')
+def tcw():
+    return render_template('tcw.html')
+
 if __name__ == '__main__':
     app.run(port=8000,debug=True) 
